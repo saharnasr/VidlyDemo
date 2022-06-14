@@ -4,6 +4,7 @@ const customers = require('./routes/customers');
 const express = require('express');
 const app = express();
 
+// this is samples of code which we implement at training  with node js and mongodb
 mongoose.connect('mongodb://localhost/vidly')
   .then(() => console.log('Connected to MongoDB...'))
   .catch(err => console.error('Could not connect to MongoDB...'));

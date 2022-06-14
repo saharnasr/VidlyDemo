@@ -9,7 +9,7 @@ const Genre = mongoose.model('Genre', new mongoose.Schema({
     maxlength: 50
   }
 }));
-
+//validation usin joi
 function validateGenre(genre) {
   const schema = {
     name: Joi.string().min(3).required()
